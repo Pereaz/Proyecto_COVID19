@@ -37,7 +37,7 @@ columnas_fecha = [
 for col in columnas_fecha:
     df[col] = pd.to_datetime(df[col], errors='coerce')
 
-print("\n🔧 Tipos de datos actualizados:")
+print("\nTipos de datos actualizados:")
 print(df.dtypes)
 
 # 4. Manejar valores faltantes
@@ -52,6 +52,6 @@ print("\nValores faltantes después de limpieza:")
 print(df.isnull().sum())
 
 # 5. Guardar datos limpios
-df.to_csv('covid_risaralda_limpio.csv', index=False)
+df.to_csv('data/covid_risaralda_limpio.csv', index=False)
 print("\nDatos guardados en: covid_risaralda_limpio.csv")
 print("Formato final:", df.shape)

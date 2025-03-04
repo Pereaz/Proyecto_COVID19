@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Cargar datos limpios
-df = pd.read_csv('covid_risaralda_limpio.csv')
+df = pd.read_csv('data/covid_risaralda_limpio.csv')
 
 # Convertir columna de fechas a datetime (¡FIX PRINCIPAL!)
 df['fecha_reporte_web'] = pd.to_datetime(df['fecha_reporte_web'], errors='coerce')

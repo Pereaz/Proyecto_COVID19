@@ -27,20 +27,25 @@ Requerimientos Funcionales
 
 Estructura del Proyecto
 proyecto_covid/
-├── api.py               # Consulta datos de la API
-├── ui.py                # Interfaz de usuario (entrada/salida)
-├── main.py              # Punto de entrada del programa
-├── limpieza.py          # Limpieza y preprocesamiento de datos
-├── visualizaciones.py   # Generación de gráficos
-├── ejercicio_practico.py# Análisis exploratorio (EDA)
-├── covid_risaralda_limpio.csv  # Dataset procesado
-├── README.md            # Documentación
-└── evidencias/          # Gráficos y capturas
-    ├── histograma_edades.png
-    ├── casos_por_ciudad.png
-    ├── tendencias_mensuales.png
-    └── boxplot_edades_estado.png
-
+├── data/
+│   └── covid_risaralda_limpio.csv
+├── outputs/
+│   └── evidencias/
+│       ├── boxplot_edades_estado.png
+│       ├── casos_por_ciudad.png
+│       ├── histograma_edades.png
+│       └── tendencias_mensuales.png
+├── src/
+│   ├── api.py
+│   ├── ejercicio_practico.py
+│   ├── limpieza.py
+│   ├── main.py
+│   ├── ui.py
+│   └── visualizaciones.py
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ------------------------------------------------------------
 
 Hallazgos Clave
